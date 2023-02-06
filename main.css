@@ -21,15 +21,15 @@ h1 {
 
 button {
     background-color: rgb(177, 177, 177); /* Green */
-    border-color: #979797;
     color: white;
-    border-style: dashed solid;
     padding: 15px 32px;
+    border-color: #979797;
+    border-style: dashed solid;
+    border-width: 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 10px;
     width: 150px;
 }
 
@@ -61,6 +61,9 @@ footer {
     width: 100%;
     left: 0;
     height: 50px;
+    border-color: #979797;
+    border-style: dashed solid;
+    border-width: 5px;
   }
 
 a {
