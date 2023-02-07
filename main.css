@@ -1,4 +1,8 @@
 
+#my{
+    zoom: 125%;
+    }
+
 html, body {
     height: 100%;
 }
@@ -10,7 +14,7 @@ html {
 
 body {
     display: table-cell;
-    vertical-align: middle;
+    align-self: center;
 }
 
 h1 {
@@ -23,7 +27,7 @@ button {
     background-color: rgb(177, 177, 177); /* Green */
     color: white;
     padding: 15px 32px;
-    border-color: #979797;
+    border-color: #000000;
     border-style: dashed solid;
     border-width: 5px;
     text-align: center;
@@ -61,7 +65,7 @@ footer {
     width: 100%;
     left: 0;
     height: 50px;
-    border-color: #979797;
+    border-color: #000000;
     border-style: dashed solid;
     border-width: 5px;
   }
@@ -73,3 +77,29 @@ a {
     text-decoration: none;
     font-family: monospace;
 }
+
+
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border:10px solid black;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #ff0000;
+  }
