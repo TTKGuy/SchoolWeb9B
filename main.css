@@ -1,10 +1,12 @@
 
 #my{
     zoom: 125%;
+    font-family: monospace;
     }
 
 html, body {
     height: 100%;
+    font-family: monospace;
 }
 
 html {
@@ -116,6 +118,15 @@ a {
     border:5px solid black;
     border-right: 25px;
   }
+  .sidenav select{
+    line-height: 2px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #000000;
+    border:5px solid black;
+    border-right: 25px;
+    width: 100%
+  }
 
 
   .sidenav a:hover {
@@ -128,6 +139,92 @@ a {
   }
   
 
-  .sidenav sidenavbottom {
+  .LeftContent {
+    height: 100%;
+    width: 600px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 310px;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border:10px solid black;
+  }
 
+  .LeftContent textarea{
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+
+  }
+
+  .LeftContent p{
+    font-family: monospace;
+    text-align: center;
+    font-size: large;
+    top: -10px;
+  }
+  .RightContent {
+    height: 100%;
+    width: 600px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 910px;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border:10px solid black;
+  }
+
+
+  .RightContent textarea{
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+
+  }
+
+  .RightContent p{
+    font-family: monospace;
+    text-align: center;
+    font-size: large;
+    top: -10px;
+  }
+
+  .AddSpot {
+    height: 100%;
+    width: 390px;
+    float: right;
+    background-image: url(https://4.bp.blogspot.com/-beNwqJ7ab2A/Uno_3xseD1I/AAAAAAAAAKA/7mu-J6B118s/s1600/Infinitive+Advertising+Photos.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    top: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    border:10px solid black;
+  }
+
+  .FullPlan {
+    height: 100%;
+    width: 390px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 1510px;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border:10px solid black;
+  }
+
+  .FullPlan p{
+    font-family: monospace;
+    text-align: center;
+    font-size: large;
+    top: -10px;
   }
