@@ -83,7 +83,7 @@ a {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: rgb(177, 177, 177);
     overflow-x: hidden;
     padding-top: 20px;
     border:10px solid black;
@@ -127,7 +127,16 @@ a {
     border-right: 25px;
     width: 100%
   }
-
+  .sidenav meter{
+    line-height: 2px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #000000;
+    border:5px solid black;
+    border-right: 25px;
+    width: 98%;
+    height: 50px;
+  }
 
   .sidenav a:hover {
     color: #ff0000;
@@ -148,7 +157,6 @@ a {
     left: 310px;
     background-color: #ffffff;
     overflow-x: hidden;
-    padding-top: 20px;
     border:10px solid black;
   }
 
@@ -174,7 +182,6 @@ a {
     left: 910px;
     background-color: #ffffff;
     overflow-x: hidden;
-    padding-top: 20px;
     border:10px solid black;
   }
 
@@ -227,4 +234,21 @@ a {
     text-align: center;
     font-size: large;
     top: -10px;
+  }
+
+
+  meter::-webkit-meter-optimum-value {
+    box-shadow: 0 5px 5px -5px #999 inset;
+    background-image: linear-gradient(
+      90deg, 
+      #ff0000 5%, 
+      #ff4800 5%,
+      #ff8800 15%,
+      #ffbb00 15%,
+      #ffee00 55%,
+      #e5ff00 55%,
+      #2bff00 95%,
+      #33ff00 100%
+    );
+    background-size: 100% 100%;
   }
