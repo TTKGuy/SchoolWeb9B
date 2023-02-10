@@ -2,16 +2,19 @@
 #my{
     zoom: 125%;
     font-family: monospace;
+    color: #192F01;
     }
 
 html, body {
     height: 100%;
     font-family: monospace;
+    background-color: #F8EFEA;
 }
 
 html {
     display: table;
     margin: auto;
+    color: #192F01;
 }
 
 body {
@@ -26,18 +29,40 @@ h1 {
 }
 
 button {
-    background-color: rgb(177, 177, 177); /* Green */
-    color: white;
-    padding: 15px 32px;
-    border-color: #000000;
-    border-style: dashed solid;
-    border-width: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    width: 150px;
+  background-color: #DED369; 
+  color: #192F01;
+  padding: 15px 32px;
+  border-color: #192F01;
+  border-style: dashed solid;
+  border-width: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 150px;
+  font-family: monospace;
+  height: 75px;
+  transition: 0.5s;
 }
+
+
+button:hover {
+  background-color: #192F01; 
+  color: #DED369;
+  padding: 15px 32px;
+  border-color: #E0475B;
+  border-style: dashed solid;
+  border-width: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 165px;
+  font-family: monospace;
+  height: 90px;
+}
+
+
 
 td 
 {
@@ -55,14 +80,14 @@ td
 
 footer {
     text-align: center;
-    background-color: rgb(177, 177, 177);
-    color: white;
+    background-color: #DED369;
+    color: #192F01;
     position: fixed;
     bottom: 0;
     width: 100%;
     left: 0;
     height: 50px;
-    border-color: #000000;
+    border-color: #192F01;
     border-style: dashed solid;
     border-width: 5px;
   }
@@ -70,7 +95,7 @@ footer {
 a {
     text-align: center;
     font-size: 25px;
-    color: black;
+    color: #192F01;
     text-decoration: none;
     font-family: monospace;
 }
@@ -83,17 +108,17 @@ a {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(177, 177, 177);
+    background-color: #DED369;
     overflow-x: hidden;
     padding-top: 20px;
-    border:10px solid black;
+    border:10px solid #192F01;
   }
   
   .sidenav p {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #000000;
+    color: #192F01;
     display: block;
     line-height: 2px;
     text-align: center;
@@ -102,37 +127,54 @@ a {
   
 
   .sidenav a img{
+    transition: 0.5s;
     position: absolute;
     top: -25px;
     left: -25px;
     height: 100px;
     width: 100px;
+    
   }
+
+
+  .sidenav a img:hover{
+    position: absolute;
+    top: -35px;
+    left: -35px;
+    height: 120px;
+    width: 120px;
+  }
+
+
+
 
 
   .sidenav input{
+    font-family: monospace;
     line-height: 2px;
     text-decoration: none;
     font-size: 30px;
-    color: #000000;
-    border:5px solid black;
+    color: #192F01;
+    border:5px solid #192F01;
     border-right: 25px;
   }
   .sidenav select{
+    font-family: monospace;
     line-height: 2px;
     text-decoration: none;
     font-size: 30px;
-    color: #000000;
-    border:5px solid black;
+    color: #192F01;
+    border:5px solid #192F01;
     border-right: 25px;
     width: 100%
+    
   }
   .sidenav meter{
     line-height: 2px;
     text-decoration: none;
     font-size: 30px;
-    color: #000000;
-    border:5px solid black;
+    color: #192F01;
+    border:5px solid #192F01;
     border-right: 25px;
     width: 98%;
     height: 50px;
@@ -144,7 +186,7 @@ a {
 
   .sidenav hr{
     
-    border:5px solid black;
+    border:5px solid #192F01;
   }
   
 
@@ -155,15 +197,17 @@ a {
     z-index: 1;
     top: 0;
     left: 310px;
-    background-color: #ffffff;
+    background-color: #F8EFEA;
     overflow-x: hidden;
-    border:10px solid black;
+    border:10px solid #192F01;
   }
 
   .LeftContent textarea{
     width: 100%;
     height: 100%;
     font-family: monospace;
+    background-color: #F8EFEA;
+    font-size: 40px;
 
   }
 
@@ -180,9 +224,9 @@ a {
     z-index: 1;
     top: 0;
     left: 910px;
-    background-color: #ffffff;
+    background-color: #F8EFEA;
     overflow-x: hidden;
-    border:10px solid black;
+    border:10px solid #192F01;
   }
 
 
@@ -190,6 +234,8 @@ a {
     width: 100%;
     height: 100%;
     font-family: monospace;
+    background-color: #F8EFEA;
+    font-size: 40px;
 
   }
 
@@ -211,9 +257,9 @@ a {
     right: 0;
     z-index: 1;
     top: 0;
-    background-color: #ffffff;
+    background-color: #F8EFEA;
     overflow-x: hidden;
-    border:10px solid black;
+    border:10px solid #192F01;
   }
 
   .FullPlan {
@@ -223,10 +269,10 @@ a {
     z-index: 1;
     top: 0;
     left: 1510px;
-    background-color: #ffffff;
+    background-color: #F8EFEA;
     overflow-x: hidden;
     padding-top: 20px;
-    border:10px solid black;
+    border:10px solid #192F01;
   }
 
   .FullPlan p{
