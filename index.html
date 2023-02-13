@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="node_modules/swup/dist/Swup.cjs"></script>
+    <script defer src="main.js"></script>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+  <main id="swup" class="transition-fade"> 
 
 <br>
 <h1> Planner </h1>
@@ -18,9 +21,9 @@
       <th><img src="https://static.thenounproject.com/png/17562-200.png" alt="Italian Trulli" height="200px" width="200px"></th>
     </tr>
     <tr>
-      <center><td><button type="button" onclick="document.location='BudgetCalc.html'">Budget Calculator</button></td></center>
-      <td><button type="button" onclick="document.location='SchoolPlan.html'">School Planner</button></td>
-      <td><button type="button" onclick="document.location='FoodPlan.html'">Food planner</button></td>
+      <center><td><a href="./BudgetCalc.html"><button type="button">Budget Calculator</button></td></center><a></a>
+      <td><a href="./FoodPlan.html"><button type="button">School Planner</button></td></a>
+      <td><a href="./SchoolPlan.html"><button type="button">Food planner</button></td></a>
     </tr>
   </table>
 
@@ -36,5 +39,7 @@
 
 <script src="main.js">  
 </script>  
+
+</main>
 </body>
 </html>

@@ -1,4 +1,15 @@
 
+
+
+#my.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+#my.html.is-animating .transition-fade {
+  opacity: 0;
+}
+
 #my{
     zoom: 125%;
     font-family: monospace;
