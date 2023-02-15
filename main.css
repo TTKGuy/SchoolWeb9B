@@ -1,5 +1,38 @@
+@font-face { font-family: TFFont; src: url('tf2build.ttf'); } 
 
 
+@keyframes rotatatey{
+  0% {
+    pointer-events: none;
+  }
+	25% {
+		transform: rotate(-5deg);
+	}
+	75% {
+		transform: rotate(5deg);
+	}
+  100% {
+    pointer-events: all;
+  }
+}
+
+@keyframes popout{
+  0% {
+    opacity: 0%;
+    pointer-events: none;
+    transform: rotate(200deg);
+    width: 1%;
+    left: 50%;
+    top: 50%;
+  }
+  99% {
+    pointer-events: none;
+  }
+  100% {
+    opacity: 100%;
+    pointer-events: all;
+  }
+}
 
 #my.transition-fade {
   transition: 0.4s;
@@ -29,9 +62,105 @@ html {
 }
 
 body {
-    display: table-cell;
-    align-self: center;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: grid;
 }
+
+.wrapperindx{
+  place-items: center;
+  width:80vw;
+  height: 80vh;
+  }
+
+
+
+  
+.wrapperindx img{
+  width: 20%;
+  position: absolute;
+  transition: 500ms;
+  }
+
+
+
+
+.one:hover{
+  top: 0%;
+  left: 7.5%;
+  width: 25%;
+  position: absolute;
+  transition: 500ms;
+  }
+.two:hover{
+  width: 25%;
+  top: 0%;
+  left: 67.5%;
+
+  }
+.three:hover{
+  width: 25%;
+  left: 7.5%;
+  top: 50%;
+
+  }
+
+.one{
+  transform: rotate(30deg);
+  animation: 1s ease-in-out 0s 1 popout;
+  transition: 500ms;
+  top: 5%;
+  left: 10%;
+  }
+.two{
+  transform: rotate(-30deg);
+  animation: 1s ease-in-out 0s 1 popout;
+  top: 5%;
+  left: 70%;
+
+  }
+.three{
+  transform: rotate(30deg);
+  animation: 1s ease-in-out 0s 1 popout;
+  left: 10%;
+  top: 55%;
+
+  }
+.four{
+  transform: rotate(30deg);
+  animation: 1s ease-in-out 0s 1 popout;
+  left: 70%;
+  top: 55%;
+
+  }
+
+.four:hover{
+  width: 25%;
+  left: 67.5%;
+  top: 50%;
+
+  }
+
+
+
+
+  
+.logo{
+  animation: rotatatey 6s ease-in-out infinite;
+  font-size: 10vw;
+  position: absolute;
+  font-family: TFFont;
+
+}
+    
+      
+
+
+
+
+
 
 h1 {
     font-size: 100px;
