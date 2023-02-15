@@ -1,16 +1,13 @@
 @font-face { font-family: TFFont; src: url('tf2build.ttf'); } 
 @keyframes rotatatey{
   0% {
-    pointer-events: none;
+    transform: rotate(-50deg);
   }
-	25% {
-		transform: rotate(-5deg);
-	}
-	75% {
-		transform: rotate(5deg);
-	}
+  50%{
+    transform: rotate(-40deg);
+  }
   100% {
-    pointer-events: all;
+    transform: rotate(-50deg);
   }
 }
 @keyframes popout{
@@ -45,7 +42,7 @@
 html, body {
     height: 100%;
     font-family: monospace;
-    background-color: #181823;
+    background-color: #537FE7;
 }
 html {
     display: table;
@@ -123,11 +120,13 @@ body {
 
   }  
 .logo{
-  color: #E9F8F9;
   animation: rotatatey 6s ease-in-out infinite;
-  font-size: 10vw;
   position: absolute;
-  font-family: TFFont;
+  transform: rotate(-45deg);
+  position: absolute;
+  width: 50vw;
+  transform: translate(-50%, -50%);
+
 
 }
 h1 {
