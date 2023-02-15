@@ -1,6 +1,4 @@
 @font-face { font-family: TFFont; src: url('tf2build.ttf'); } 
-
-
 @keyframes rotatatey{
   0% {
     pointer-events: none;
@@ -15,7 +13,6 @@
     pointer-events: all;
   }
 }
-
 @keyframes popout{
   0% {
     opacity: 0%;
@@ -33,34 +30,28 @@
     pointer-events: all;
   }
 }
-
 #my.transition-fade {
   transition: 0.4s;
   opacity: 1;
 }
-
 #my.html.is-animating .transition-fade {
   opacity: 0;
 }
-
 #my{
     zoom: 125%;
     font-family: monospace;
-    color: #192F01;
+    color: #E9F8F9;
     }
-
 html, body {
     height: 100%;
     font-family: monospace;
-    background-color: #F8EFEA;
+    background-color: #181823;
 }
-
 html {
     display: table;
     margin: auto;
-    color: #192F01;
+    color: #181823;
 }
-
 body {
   place-items: center;
   height: 100vh;
@@ -68,25 +59,16 @@ body {
   overflow: hidden;
   display: grid;
 }
-
 .wrapperindx{
   place-items: center;
   width:80vw;
   height: 80vh;
   }
-
-
-
-  
 .wrapperindx img{
   width: 20%;
   position: absolute;
   transition: 500ms;
   }
-
-
-
-
 .one:hover{
   top: 0%;
   left: 7.5%;
@@ -106,7 +88,6 @@ body {
   top: 50%;
 
   }
-
 .one{
   transform: rotate(30deg);
   animation: 1s ease-in-out 0s 1 popout;
@@ -135,39 +116,25 @@ body {
   top: 55%;
 
   }
-
 .four:hover{
   width: 25%;
   left: 67.5%;
   top: 50%;
 
-  }
-
-
-
-
-  
+  }  
 .logo{
+  color: #E9F8F9;
   animation: rotatatey 6s ease-in-out infinite;
   font-size: 10vw;
   position: absolute;
   font-family: TFFont;
 
 }
-    
-      
-
-
-
-
-
-
 h1 {
     font-size: 100px;
     text-align: center;
     font-family: monospace;
 }
-
 button {
   background-color: #DED369; 
   color: #192F01;
@@ -184,8 +151,6 @@ button {
   height: 75px;
   transition: 0.5s;
 }
-
-
 button:hover {
   background-color: #192F01; 
   color: #DED369;
@@ -201,23 +166,6 @@ button:hover {
   font-family: monospace;
   height: 90px;
 }
-
-
-
-td 
-{
-    height: 50px; 
-    width: 50px;
-    text-align: center;
-}
-
-#cssTable td 
-{
-    text-align: center; 
-    vertical-align: middle;
-}
-
-
 footer {
     text-align: center;
     background-color: #DED369;
@@ -231,41 +179,35 @@ footer {
     border-style: dashed solid;
     border-width: 5px;
   }
-
 a {
     text-align: center;
     font-size: 25px;
-    color: #192F01;
+    color: #E9F8F9;
     text-decoration: none;
     font-family: monospace;
 }
-
-
 .sidenav {
-    height: 100%;
-    width: 300px;
+    height: 100vw;
+    width: 100vh;
     position: fixed;
     z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #DED369;
+    top: 0vh;
+    left: 0vw;
+    background-color: #181823;
     overflow-x: hidden;
-    padding-top: 20px;
-    border:10px solid #192F01;
   }
-  
+  .sidenav img{
+    width: 30vh;
+  }
   .sidenav p {
-    padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #192F01;
-    display: block;
+    
+    color: #E9F8F9;
     line-height: 2px;
     text-align: center;
     font-family: monospace;
   }
-  
-
   .sidenav a img{
     transition: 0.5s;
     position: absolute;
@@ -275,8 +217,6 @@ a {
     width: 100px;
     
   }
-
-
   .sidenav a img:hover{
     position: absolute;
     top: -35px;
@@ -284,28 +224,20 @@ a {
     height: 120px;
     width: 120px;
   }
-
-
-
-
-
   .sidenav input{
+    border-width: 0;
+    background-color: #537FE7;
+    font-size: 2vw;
     font-family: monospace;
-    line-height: 2px;
     text-decoration: none;
-    font-size: 30px;
-    color: #192F01;
-    border:5px solid #192F01;
-    border-right: 25px;
+    color: #E9F8F9;
   }
   .sidenav select{
     font-family: monospace;
     line-height: 2px;
     text-decoration: none;
-    font-size: 30px;
-    color: #192F01;
-    border:5px solid #192F01;
-    border-right: 25px;
+    font-size: 2vw;
+    color: #E9F8F9;
     width: 100%
     
   }
@@ -313,23 +245,12 @@ a {
     line-height: 2px;
     text-decoration: none;
     font-size: 30px;
-    color: #192F01;
+    color: #E9F8F9;
     border:5px solid #192F01;
     border-right: 25px;
     width: 98%;
     height: 50px;
   }
-
-  .sidenav a:hover {
-    color: #ff0000;
-  }
-
-  .sidenav hr{
-    
-    border:5px solid #192F01;
-  }
-  
-
   .LeftContent {
     height: 100%;
     width: 600px;
@@ -341,7 +262,6 @@ a {
     overflow-x: hidden;
     border:10px solid #192F01;
   }
-
   .LeftContent textarea{
     width: 100%;
     height: 100%;
@@ -350,7 +270,6 @@ a {
     font-size: 40px;
 
   }
-
   .LeftContent p{
     font-family: monospace;
     text-align: center;
@@ -368,8 +287,6 @@ a {
     overflow-x: hidden;
     border:10px solid #192F01;
   }
-
-
   .RightContent textarea{
     width: 100%;
     height: 100%;
@@ -378,14 +295,12 @@ a {
     font-size: 40px;
 
   }
-
   .RightContent p{
     font-family: monospace;
     text-align: center;
     font-size: large;
     top: -10px;
   }
-
   .AddSpot {
     height: 100%;
     width: 390px;
@@ -401,7 +316,6 @@ a {
     overflow-x: hidden;
     border:10px solid #192F01;
   }
-
   .FullPlan {
     height: 100%;
     width: 390px;
@@ -414,15 +328,12 @@ a {
     padding-top: 20px;
     border:10px solid #192F01;
   }
-
   .FullPlan p{
     font-family: monospace;
     text-align: center;
     font-size: large;
     top: -10px;
   }
-
-
   meter::-webkit-meter-optimum-value {
     box-shadow: 0 5px 5px -5px #999 inset;
     background-image: linear-gradient(
