@@ -1,3 +1,6 @@
+
+
+
 @font-face { font-family: TFFont; src: url('tf2build.ttf'); } 
 @keyframes rotatatey{
   0% {
@@ -27,18 +30,25 @@
     pointer-events: all;
   }
 }
-#my.transition-fade {
-  transition: 0.4s;
-  opacity: 1;
+#blur{
+  height: 200%;
+  width: 200%;
+  position: absolute;
+  z-index: 0.1;
+  backdrop-filter: blur(12vmax);
 }
-#my.html.is-animating .transition-fade {
-  opacity: 0;
+#blob{
+  z-index: 0;
+  left: 50%;
+  top: 500%;
+  translate: -50% -50%;
+  position: absolute;
+  background-color: white;
+  height: 500px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: #3f6fdf;
 }
-#my{
-    zoom: 125%;
-    font-family: monospace;
-    color: #E9F8F9;
-    }
 html, body {
     height: 100%;
     font-family: monospace;
@@ -134,37 +144,7 @@ h1 {
     text-align: center;
     font-family: monospace;
 }
-button {
-  background-color: #DED369; 
-  color: #192F01;
-  padding: 15px 32px;
-  border-color: #192F01;
-  border-style: dashed solid;
-  border-width: 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  width: 150px;
-  font-family: monospace;
-  height: 75px;
-  transition: 0.5s;
-}
-button:hover {
-  background-color: #192F01; 
-  color: #DED369;
-  padding: 15px 32px;
-  border-color: #E0475B;
-  border-style: dashed solid;
-  border-width: 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  width: 165px;
-  font-family: monospace;
-  height: 90px;
-}
+
 footer {
     text-align: center;
     background-color: #DED369;
@@ -185,6 +165,76 @@ a {
     text-decoration: none;
     font-family: monospace;
 }
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #C0EEF2;
+  overflow: hidden;
+  white-space: nowrap;
+  top: 0%;
+  left: 0%;
+  position: absolute;
+  width: 100vw;
+}
+.header img{
+  bottom: -1vh;
+  height: 10vh;
+}
+
+.header button {
+  transition: 50ms;
+  border-style: solid;
+  text-align: center;
+  font-size: 5vh;
+  border-color: #537FE7;
+  border-width: 0.5vw;
+  text-align: center;
+  background: #E9F8F9;
+  color: #537FE7;
+  height: 10vh;
+  width: 15vw;
+
+}
+
+.header button:hover {
+  transition: 300ms;
+  border-style: solid;
+  text-align: center;
+  font-size: 5.5vh;
+  border-color: #537FE7;
+  border-width: 0.5vw;
+  text-align: center;
+  background: #E9F8F9;
+  color: #537FE7;
+  height: 10.5vh;
+  width: 15.5vw;
+
+}
+
+
+.header button:active {
+  transition: 50ms;
+  border-style: solid;
+  text-align: center;
+  font-size: 4.5vh;
+  border-color: #537FE7;
+  border-width: 0.5vw;
+  text-align: center;
+  background: #E9F8F9;
+  color: #537FE7;
+  height: 9.5vh;
+  width: 14.5vw;
+
+}
+
+
+
+
+
+
+
+
+
 .sidenav {
     height: 100vw;
     width: 100vh;
