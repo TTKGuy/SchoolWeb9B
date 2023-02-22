@@ -163,7 +163,8 @@ a {
     font-family: monospace;
 }
 .header {
-  padding: 10px;
+  z-index: 10;
+  padding: 2vh;
   text-align: center;
   background: #C0EEF2;
   overflow: hidden;
@@ -178,6 +179,32 @@ a {
   height: 10vh;
 }
 .header button {
+  transition: 50ms;
+  border-style: solid;
+  text-align: center;
+  font-size: 5vh;
+  border-color: #537FE7;
+  border-width: 0.5vw;
+  text-align: center;
+  background: #E9F8F9;
+  color: #537FE7;
+  height: 10vh;
+  width: 15vw;
+}
+.header input {
+  transition: 50ms;
+  border-style: solid;
+  text-align: center;
+  font-size: 5vh;
+  border-color: #537FE7;
+  border-width: 0.5vw;
+  text-align: center;
+  background: #E9F8F9;
+  color: #537FE7;
+  height: 10vh;
+  width: 15vw;
+}
+.header select{
   transition: 50ms;
   border-style: solid;
   text-align: center;
@@ -215,6 +242,23 @@ a {
   height: 10vh;
   width: 15vw;
 }
+.header a img{
+  transition: 0.5s;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  height: 100px;
+  width: 100px;
+  
+}
+.header a img:hover{
+  position: absolute;
+  top: -35px;
+  left: -35px;
+  height: 120px;
+  width: 120px;
+}
+
 #nonbutton {
   border-style: groove;
   text-align: center;
@@ -237,6 +281,77 @@ a {
     background-color: #181823;
     overflow-x: hidden;
   }
+  .lefthalf {
+    border-right: 1vw solid #C0EEF2;
+    overflow: hidden;
+    height: 83vh;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+  }
+  .lefthalf textarea{
+    color: #181823;
+    border: none;
+    overflow: auto;
+    outline: none;
+    text-align: right;
+    width: 97.9%;
+    height: 100%;
+    font-family: monospace;
+    background-color: #11111100;
+    font-size: 40px;
+  }
+  .lefthalf p {
+    color: #181823;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 2px;
+    text-align: center;
+    font-family: monospace;
+  }
+  .righthalf {
+    border-left: 1vw solid #C0EEF2;
+    overflow: hidden;
+    height: 83vh;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    background-color: #11111100;
+    overflow-x: hidden;
+  }
+  .righthalf textarea{
+    color: #181823;
+    border: none;
+    overflow: auto;
+    outline: none;
+    text-align: left;
+    padding-left: 1vw;
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+    background-color: #11111100;
+    font-size: 40px;
+  }
+  .righthalf p {
+    color: #181823;
+    text-decoration: none;
+    font-size: 25px;
+    
+    line-height: 2px;
+    text-align: center;
+    font-family: monospace;
+  }
+
+
+
+
+
+
   .sidenav img{
     width: 30vh;
   }
