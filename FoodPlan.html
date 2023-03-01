@@ -1,77 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Food Planner</title>
     <script src="node_modules/swup/dist/Swup.cjs"></script>
     <script defer src="main.js"></script>
     <link rel="stylesheet" href="main.css">
-    
+    <link rel="icon" href="plann-co. logo no bg.png">
 </head>
-
 <body>
+  <div id="blob"></div>
+  <div id="blur"></div> 
   <main id="swup" class="transition-fade">
-    <div class="sidenav">
+    <div class="header">
         <a href="index.html" ><img src="https://pixsector.com/cache/1788ac30/ave36c6a1e9d5a19e29c4.png" alt=""></a>
-        <center><p>⬐Meal⬎</p></center>
         <select name="Meals" id="Meals">
-            <option value="q">There</option>
-            <option value="w">Will</option>
-            <option value="e">Be</option>
-            <option value="r">Meal</option>
-            <option value="t">Choices</option>
-            <option value="s">Here</option>
-            <option value="z">Aventually</option>
-          </select>
-        <br>
-        <center><p>⬐Time⬎</p></center>
-        <input type="text" id="IMoney" name="IMoney">
-        <center><p>⬐Calories⬎</p></center>
-        <input type="text" id="IMoney" name="IMoney">
-        <center><p>⬐Flavour⬎</p></center>
-        <input type="text" id="IMoney" name="IMoney">
-        <center><p>⬐Health⬎</p></center>
-        <meter id="Health"
-          min="0" max="100"
-          low="33" high="66" optimum="100"
-          value="100">
-        </meter>
-
-
-        <hr>
-        <br><br><br>
-        <img src="https://static.thenounproject.com/png/17562-200.png" alt="Italian Trulli" height="300px" width="300px">
-        <br><br><br>
-
-    </div> 
-    <div class="LeftContent">
-      <p><b>⬐Required ingredients⬎</b></p>
+          <option value="q">There</option>
+          <option value="w">Will</option>
+          <option value="e">Be</option>
+          <option value="r">Meal</option>
+          <option value="t">Choices</option>
+          <option value="s">Here</option>
+          <option value="z">Eventually</option>
+        </select>
+        <img src="icoflat.png">
+      </div>
+    <div class="lefthalf">
+      <center>
+      <img src="clock.png" class="icon"><p class="icotext">20 minutes</p>
+      <img src="calories.png" class="icon"><p class="icotext">155,1 kcal</p>
+      <img src="flavor.png" class="icon"><p class="icotext">salty</p></center>
     </div>
-    <div class="RightContent">
-      <p><b>⬐Recipe⬎</b></p>
-    </div>
-    <div class="FullPlan">
-      <p><b></b></p>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-
+    
+    <div class="righthalf">
+      <p>RECIPE</p>
+      <textarea placeholder="No Food Selected" disabled></textarea>
+      </div>
+      
   
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
 </main>
 </body>
-
 </html>
