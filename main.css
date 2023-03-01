@@ -27,29 +27,12 @@
     pointer-events: all;
   }
 }
-#blur{
-  height: 200%;
-  width: 200%;
-  position: absolute;
-  z-index: 0.1;
-  backdrop-filter: blur(12vmax);
-}
-#blob{
-  z-index: 0;
-  left: 50%;
-  top: 500%;
-  translate: -50% -50%;
-  position: absolute;
-  background-color: white;
-  height: 500px;
-  aspect-ratio: 1;
-  border-radius: 100%;
-  background-color: #3f6fdf;
-}
+
 html, body {
     height: 100%;
     font-family: monospace;
-    background-color: #537FE7;
+    background: rgb(110,151,249);
+    background: radial-gradient(circle, rgba(110,151,249,1) 0%, rgba(83,127,231,1) 50%, rgba(35,77,176,1) 100%);
 }
 html {
     display: table;
