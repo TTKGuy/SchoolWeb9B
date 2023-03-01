@@ -29,17 +29,22 @@
 }
 
 html, body {
+  background: rgb(110,151,249);
+  background: radial-gradient(circle, rgba(110,151,249,1) 0%, rgba(83,127,231,1) 50%, rgba(35,77,176,1) 100%);
     height: 100%;
     font-family: monospace;
-    background: rgb(110,151,249);
-    background: radial-gradient(circle, rgba(110,151,249,1) 0%, rgba(83,127,231,1) 50%, rgba(35,77,176,1) 100%);
+
 }
 html {
+  background: rgb(110,151,249);
+  background: radial-gradient(circle, rgba(110,151,249,1) 0%, rgba(83,127,231,1) 50%, rgba(35,77,176,1) 100%);
     display: table;
     margin: auto;
     color: #181823;
 }
 body {
+  background: rgb(110,151,249);
+  background: radial-gradient(circle, rgba(110,151,249,1) 0%, rgba(83,127,231,1) 50%, rgba(35,77,176,1) 100%);
   place-items: center;
   height: 100vh;
   width: 100vw;
