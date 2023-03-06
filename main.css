@@ -144,6 +144,7 @@ footer {
     border-width: 5px;
   }
 a {
+  padding: 1vw;
     text-align: center;
     font-size: 25px;
     color: #E9F8F9;
