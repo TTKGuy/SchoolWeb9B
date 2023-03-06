@@ -244,16 +244,16 @@ a {
 .header a img{
   transition: 0.5s;
   position: absolute;
-  top: -25px;
-  left: -25px;
+  top: 0;
+  left: 0;
   height: 100px;
   width: 100px;
   
 }
 .header a img:hover{
   position: absolute;
-  top: -35px;
-  left: -35px;
+  top: -10px;
+  left: -10px;
   height: 120px;
   width: 120px;
 }
