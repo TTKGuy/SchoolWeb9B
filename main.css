@@ -10,6 +10,17 @@
     transform: rotate(-50deg);
   }
 }
+@keyframes rotatatey2{
+  0% {
+    transform: rotate(0deg);
+  }
+  50%{
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes popout{
   0% {
     opacity: 0%;
@@ -27,7 +38,6 @@
     pointer-events: all;
   }
 }
-
 html, body {
   background: rgb(110,151,249);
   background: radial-gradient(circle, rgba(110,151,249,1) 0%, rgba(83,127,231,1) 50%, rgba(35,77,176,1) 100%);
@@ -62,6 +72,7 @@ body {
   transition: 500ms;
   }
 .one:hover{
+  transform: rotate(0deg);
   top: 0%;
   left: 7.5%;
   width: 25%;
@@ -69,12 +80,14 @@ body {
   transition: 500ms;
   }
 .two:hover{
+  transform: rotate(0deg);
   width: 25%;
   top: 0%;
   left: 67.5%;
 
   }
 .three:hover{
+  transform: rotate(0deg);
   width: 25%;
   left: 7.5%;
   top: 50%;
@@ -109,6 +122,7 @@ body {
 
   }
 .four:hover{
+  transform: rotate(0deg);
   width: 25%;
   left: 67.5%;
   top: 50%;
@@ -218,16 +232,12 @@ a {
 }
 .header button:hover{
   transition: 300ms;
-  border-style: solid;
-  text-align: center;
   font-size: 5.5vh;
-  border-color: #537FE7;
+  border-color: #3b62bb;
   border-width: 0.5vw;
   text-align: center;
   background: #E9F8F9;
   color: #537FE7;
-  height: 10.5vh;
-  width: 15.5vw;
 }
 .header button:active{
   border-style: solid;
@@ -251,6 +261,7 @@ a {
   
 }
 .header a img:hover{
+  animation: rotatatey2 1s;
   position: absolute;
   top: -10px;
   left: -10px;
@@ -345,7 +356,6 @@ a {
     text-align: center;
     font-family: monospace;
   }
-
 
 
 
