@@ -14,10 +14,10 @@
   <main id="swup" class="transition-fade">
     <div class="header">
         <a href="index.html" ><img src="https://pixsector.com/cache/1788ac30/ave36c6a1e9d5a19e29c4.png" alt=""></a>
-        <button id="IMoney" name="IMoney" onclick="ChangeType()">Income</button>
-        <button id="Spendings" name="Spendings">Spendings</button>
+        <button id="IMoney" name="IMoney" onclick="ChangeType(0)">Income</button>
+        <button id="Spendings" name="Spendings" onclick="ChangeType(1)">Spendings</button>
         <img src="icoflat.png">
-        <button id="nonbutton"name="NATMoney" disabled>NAT</button>
+        <button id="nonbutton" name="NATMoney">NAT</button>
       </div>
     <div class="lefthalf">
     <p>NAME</p>
@@ -26,7 +26,7 @@
     
     <div class="righthalf">
       <p>AMOUNT</p>
-      <textarea placeholder="50" id="righttext"></textarea>
+      <textarea placeholder="100" id="righttext" onkeyup="checkInput(this)"></textarea>
       </div>
       
   

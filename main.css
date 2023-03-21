@@ -306,7 +306,7 @@ a {
   .lefthalf textarea{
     color: #181823;
     border: none;
-    overflow: auto;
+    overflow: hidden;
     outline: none;
     text-align: right;
     width: 97.9%;
@@ -338,11 +338,11 @@ a {
   .righthalf textarea{
     color: #181823;
     border: none;
-    overflow: auto;
+    overflow: hidden;
     outline: none;
     text-align: left;
     padding-left: 1vw;
-    width: 100%;
+    width: 97.9%;
     height: 100%;
     font-family: monospace;
     background-color: #11111100;
