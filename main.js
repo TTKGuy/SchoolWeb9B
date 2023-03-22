@@ -53,3 +53,7 @@ function CombArray(array, comboutput){
         comboutput += item;
     });
 }
+
+var choise = document.getElementById("Meals");
+var value = choise.options[choise.selectedIndex].value;
+var text = choise.options[choise.selectedIndex].text;
