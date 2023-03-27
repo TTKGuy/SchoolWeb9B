@@ -37,17 +37,20 @@ function ChangeType(choice){
 
 
 function setNat(){
-    CombArray(Income2.split('\n'), inc)
-    CombArray(UnIncome2.split('\n'), spend)
+    inc = CombArray(Income2.split('\n'))
+    spend = CombArray(UnIncome2.split('\n'))
     NAT = inc - spend
     document.getElementById("nonbutton").innerHTML = NAT
     console.log(NAT)
 }
 
-function CombArray(array, comboutput){
+function CombArray(array){
+    let comboutput = 0
     array.forEach(item => {
-        comboutput += item;
+        comboutput += Number(item)
+        
     });
+    return comboutput
 }
 
 var choise = document.getElementById("Meals");
