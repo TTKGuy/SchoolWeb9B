@@ -34,17 +34,13 @@ function ChangeType(choice){
 
 }
 
-function checkInput(ob) {
-    var invalidChars = /[^0-9]/gi
-    if(invalidChars.test(ob.value)) {
-              ob.value = ob.value.replace(invalidChars,"");
-        }
-}
+
 
 function setNat(){
-    CombArray(Income2.split(' '), inc)
-    CombArray(UnIncome2.split(' '), spend)
-    var NAT = 0
+    CombArray(Income2.split('\n'), inc)
+    CombArray(UnIncome2.split('\n'), spend)
+    NAT = inc - spend
+    document.getElementById("nonbutton").innerHTML = NAT
     console.log(NAT)
 }
 

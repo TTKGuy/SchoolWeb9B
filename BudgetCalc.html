@@ -26,7 +26,7 @@
     
     <div class="righthalf">
       <p>AMOUNT</p>
-      <textarea placeholder="100" id="righttext" onkeyup="checkInput(this)"></textarea>
+      <textarea placeholder="100" id="righttext" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57) || event.charCode == 13 || event.charCode == 46 || event.charCode == 44)" onkeydown="setNat()"></textarea>
       </div>
       
   
