@@ -5,12 +5,8 @@ var UnIncome1 = ""
 var UnIncome2 = ""
 //0 for income 1 for unincome
 var budgetselect = 0
-var intervalID = window.setInterval(setNat, 500);
 var inc = 0
 var spend = 0
-
-
-
 
 function ChangeType(choice){
     if(budgetselect == 0 && choice == 1){
@@ -33,9 +29,6 @@ function ChangeType(choice){
     }
 
 }
-
-
-
 function setNat(){
     inc = CombArray(Income2.split('\n'))
     spend = CombArray(UnIncome2.split('\n'))
@@ -43,7 +36,6 @@ function setNat(){
     document.getElementById("nonbutton").innerHTML = NAT
     console.log(NAT)
 }
-
 function CombArray(array){
     let comboutput = 0
     array.forEach(item => {

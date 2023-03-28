@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="plann-co. logo no bg.png">
 </head>
-<body> 
-  <main id="swup" class="transition-fade">
+<body class="budget"> 
     <div class="header">
         <a href="index.html" ><img src="https://pixsector.com/cache/1788ac30/ave36c6a1e9d5a19e29c4.png" alt=""></a>
         <button id="IMoney" name="IMoney" onclick="ChangeType(0)">Income</button>
-        <button id="Spendings" name="Spendings" onclick="ChangeType(1)">Spendings</button>
+        <button id="Spendings" name="Spendings" onclick="ChangeType(1)">Spend</button>
         <img src="icoflat.png">
         <button id="nonbutton" name="NATMoney">NAT</button>
       </div>
@@ -26,7 +25,7 @@
     
     <div class="righthalf">
       <p>AMOUNT</p>
-      <textarea placeholder="100" id="righttext" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57) || event.charCode == 13 || event.charCode == 46 || event.charCode == 44)" onkeydown="setNat()"></textarea>
+      <textarea placeholder="100" id="righttext" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57) || event.charCode == 13 || event.charCode == 46 || event.charCode == 44)" onkeyup="setNat()"></textarea>
       </div>
       
   
