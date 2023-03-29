@@ -7,6 +7,7 @@ var UnIncome2 = ""
 var budgetselect = 0
 var inc = 0
 var spend = 0
+var nineplusten = "9\n10"
 
 function ChangeType(choice){
     if(budgetselect == 0 && choice == 1){
@@ -30,6 +31,7 @@ function ChangeType(choice){
 
 }
 function setNat(){
+    SaveThing()
     inc = CombArray(Income2.split('\n'))
     spend = CombArray(UnIncome2.split('\n'))
     NAT = inc - spend
@@ -40,11 +42,25 @@ function CombArray(array){
     let comboutput = 0
     array.forEach(item => {
         comboutput += Number(item)
-        
+    
     });
+    if(comboutput == 19){
+        return 21
+    }
+    else{
     return comboutput
-}
+}}
 
+function SaveThing(){
+    if(budgetselect == 0){
+        Income1 = document.getElementById("lefttext").value;
+        Income2 = document.getElementById("righttext").value;
+    }
+    else if(budgetselect == 1){
+        UnIncome1 = document.getElementById("lefttext").value;
+        UnIncome2 = document.getElementById("righttext").value;
+    }
+}
 var choise = document.getElementById("Meals");
 var value = choise.options[choise.selectedIndex].value;
 var text = choise.options[choise.selectedIndex].text;
