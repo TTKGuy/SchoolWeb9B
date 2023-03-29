@@ -5,9 +5,12 @@ var UnIncome1 = ""
 var UnIncome2 = ""
 //0 for income 1 for unincome
 var budgetselect = 0
+var intervalID = window.setInterval(setNat, 500);
 var inc = 0
 var spend = 0
-var nineplusten = "9\n10"
+
+
+
 
 function ChangeType(choice){
     if(budgetselect == 0 && choice == 1){
@@ -30,37 +33,66 @@ function ChangeType(choice){
     }
 
 }
+
+function checkInput(ob) {
+    var invalidChars = /[^0-9]/gi
+    if(invalidChars.test(ob.value)) {
+              ob.value = ob.value.replace(invalidChars,"");
+        }
+}
+
 function setNat(){
-    SaveThing()
-    inc = CombArray(Income2.split('\n'))
-    spend = CombArray(UnIncome2.split('\n'))
-    NAT = inc - spend
-    document.getElementById("nonbutton").innerHTML = NAT
+    CombArray(Income2.split(' '), inc)
+    CombArray(UnIncome2.split(' '), spend)
+    var NAT = 0
     console.log(NAT)
 }
-function CombArray(array){
-    let comboutput = 0
-    array.forEach(item => {
-        comboutput += Number(item)
-    
-    });
-    if(comboutput == 19){
-        return 21
-    }
-    else{
-    return comboutput
-}}
 
-function SaveThing(){
-    if(budgetselect == 0){
-        Income1 = document.getElementById("lefttext").value;
-        Income2 = document.getElementById("righttext").value;
-    }
-    else if(budgetselect == 1){
-        UnIncome1 = document.getElementById("lefttext").value;
-        UnIncome2 = document.getElementById("righttext").value;
-    }
+function CombArray(array, comboutput){
+    array.forEach(item => {
+        comboutput += item;
+    });
 }
-var choise = document.getElementById("Meals");
-var value = choise.options[choise.selectedIndex].value;
-var text = choise.options[choise.selectedIndex].text;
+
+
+function meals(){
+    var select = document.getElementById('Meals');
+    var value = select.options[select.selectedIndex].value;
+    console.log(value);
+if(value=="q"){
+    foodtime.innerHTML="x1"
+    foodkcal.innerHTML="y1"
+    foodtaste.innerHTML="z1"
+}
+if(value=="w"){
+    foodtime.innerHTML="x2"
+    foodkcal.innerHTML="y2"
+    foodtaste.innerHTML="z2"
+}
+if(value=="e"){
+    foodtime.innerHTML="x3"
+    foodkcal.innerHTML="y3"
+    foodtaste.innerHTML="z3"
+}
+if(value=="r"){
+    foodtime.innerHTML="x4"
+    foodkcal.innerHTML="x1"
+    foodtaste.innerHTML="x1"
+}
+if(value=="t"){
+    foodtime.innerHTML="x5"
+    foodkcal.innerHTML="x1"
+    foodtaste.innerHTML="x1"
+}
+if(value=="s"){
+    foodtime.innerHTML="x6"
+    foodkcal.innerHTML="x1"
+    foodtaste.innerHTML="x1"
+}
+if(value=="z"){
+    foodtime.innerHTML="x7"
+    foodkcal.innerHTML="x1"
+    foodtaste.innerHTML="x1"
+}
+
+}
