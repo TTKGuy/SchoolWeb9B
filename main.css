@@ -130,7 +130,6 @@ body {
   }  
 .logo{
   animation: rotatatey 6s ease-in-out infinite;
-  position: absolute;
   transform: rotate(-45deg);
   position: absolute;
   width: 50vw;
@@ -195,11 +194,11 @@ a {
   height: 10vh;
   width: 15vw;
 }
-.header input {
+.header input[type=time]{
   transition: 50ms;
   border-style: solid;
   text-align: center;
-  font-size: 5vh;
+  font-size: 4.5vh;
   border-color: #537FE7;
   border-width: 0.5vw;
   text-align: center;

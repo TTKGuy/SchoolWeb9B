@@ -50,7 +50,6 @@ function CombArray(array){
     else{
     return comboutput
 }}
-
 function SaveThing(){
     if(budgetselect == 0){
         Income1 = document.getElementById("lefttext").value;
@@ -60,6 +59,30 @@ function SaveThing(){
         UnIncome1 = document.getElementById("lefttext").value;
         UnIncome2 = document.getElementById("righttext").value;
     }
+}
+
+function MakeSchedule(){
+    if(document.getElementById('STIME').value >= document.getElementById('ETIME').value){
+        alert("The start time is later than the end time, dumbass")}
+    else{
+        var timeStart = new Date("01/01/2007 " + document.getElementById('STIME').value).getHours();
+        var timeEnd = new Date("01/01/2007 " + document.getElementById('ETIME').value).getHours();
+        var hourDiff = timeEnd - timeStart; 
+        alert(hourDiff)
+    }
+}
+
+function TestFunc(){
+    console.log(document.getElementById('STIME').value)
+    console.log(document.getElementById('ETIME').value)
+    var timeStart = new Date("01/01/2007 " + document.getElementById('STIME').value).getHours();
+    var timeEnd = new Date("01/01/2007 " + document.getElementById('ETIME').value).getHours();
+    var hourDiff = timeEnd - timeStart; 
+    alert(hourDiff)
+    if(document.getElementById('STIME').value >= document.getElementById('ETIME').value){
+        alert("die")
+    }
+
 }
 var choise = document.getElementById("Meals");
 var value = choise.options[choise.selectedIndex].value;
