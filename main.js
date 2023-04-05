@@ -47,7 +47,6 @@ function setNat(){
     var NAT = 0
     console.log(NAT)
 }
-HEAD
 
 function CombArray(array, comboutput){
     array.forEach(item => {
@@ -64,6 +63,7 @@ if(value=="q"){
     foodtime.innerHTML="x1"
     foodkcal.innerHTML="y1"
     foodtaste.innerHTML="z1"
+    recipearea.innerHTML="meal 1 recipe"
 }
 if(value=="w"){
     foodtime.innerHTML="x2"
