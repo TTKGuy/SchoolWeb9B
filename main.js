@@ -47,6 +47,7 @@ function setNat(){
     var NAT = 0
     console.log(NAT)
 }
+HEAD
 
 function CombArray(array, comboutput){
     array.forEach(item => {
@@ -76,23 +77,74 @@ if(value=="e"){
 }
 if(value=="r"){
     foodtime.innerHTML="x4"
-    foodkcal.innerHTML="x1"
-    foodtaste.innerHTML="x1"
+    foodkcal.innerHTML="y4"
+    foodtaste.innerHTML="z4"
 }
 if(value=="t"){
     foodtime.innerHTML="x5"
-    foodkcal.innerHTML="x1"
-    foodtaste.innerHTML="x1"
+    foodkcal.innerHTML="y5"
+    foodtaste.innerHTML="z5"
 }
 if(value=="s"){
     foodtime.innerHTML="x6"
-    foodkcal.innerHTML="x1"
-    foodtaste.innerHTML="x1"
+    foodkcal.innerHTML="y6"
+    foodtaste.innerHTML="z6"
 }
 if(value=="z"){
     foodtime.innerHTML="x7"
-    foodkcal.innerHTML="x1"
-    foodtaste.innerHTML="x1"
+    foodkcal.innerHTML="y7"
+    foodtaste.innerHTML="z6"
 }
 
 }
+
+function CombArray(array){
+    let comboutput = 0
+    array.forEach(item => {
+        comboutput += Number(item)
+    
+    });
+    if(comboutput == 19){
+        return 21
+    }
+    else{
+    return comboutput
+}}
+function SaveThing(){
+    if(budgetselect == 0){
+        Income1 = document.getElementById("lefttext").value;
+        Income2 = document.getElementById("righttext").value;
+    }
+    else if(budgetselect == 1){
+        UnIncome1 = document.getElementById("lefttext").value;
+        UnIncome2 = document.getElementById("righttext").value;
+    }
+}
+
+function MakeSchedule(){
+    if(document.getElementById('STIME').value >= document.getElementById('ETIME').value){
+        alert("The start time is later than the end time, dumbass")}
+    else{
+        var timeStart = new Date("01/01/2007 " + document.getElementById('STIME').value).getHours();
+        var timeEnd = new Date("01/01/2007 " + document.getElementById('ETIME').value).getHours();
+        var hourDiff = timeEnd - timeStart; 
+        alert(hourDiff)
+    }
+}
+
+function TestFunc(){
+    console.log(document.getElementById('STIME').value)
+    console.log(document.getElementById('ETIME').value)
+    var timeStart = new Date("01/01/2007 " + document.getElementById('STIME').value).getHours();
+    var timeEnd = new Date("01/01/2007 " + document.getElementById('ETIME').value).getHours();
+    var hourDiff = timeEnd - timeStart; 
+    alert(hourDiff)
+    if(document.getElementById('STIME').value >= document.getElementById('ETIME').value){
+        alert("die")
+    }
+
+}
+var choise = document.getElementById("Meals");
+var value = choise.options[choise.selectedIndex].value;
+var text = choise.options[choise.selectedIndex].text;
+c71f670ed3ee9efb5440e6c0dde50b6321eaaed7
