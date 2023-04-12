@@ -11,7 +11,7 @@ var spend = 0
 
 
 
-
+//budget calc.
 function ChangeType(choice){
     if(budgetselect == 0 && choice == 1){
         document.getElementById('lefttext').placeholder = "Spending Title"
@@ -64,7 +64,7 @@ function SaveThing(){
 }
 
 
-
+//food plan.
 function meals(){
     var select = document.getElementById('Meals');
     var value = select.options[select.selectedIndex].value;
@@ -115,7 +115,7 @@ if(value=="z"){
 }
 
 
-
+//school plan.
 function MakeSchedule(){
     if(document.getElementById('STIME').value >= document.getElementById('ETIME').value){
         alert("The start time is later than the end time, dumbass")}
@@ -128,7 +128,7 @@ function MakeSchedule(){
 }
 
 
-
+//testing
 function TestFunc(){
     console.log(document.getElementById('STIME').value)
     console.log(document.getElementById('ETIME').value)
