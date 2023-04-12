@@ -69,6 +69,12 @@ function meals(){
     var select = document.getElementById('Meals');
     var value = select.options[select.selectedIndex].value;
     console.log(value);
+if(value=="x"){
+    foodtime.innerHTML="No Food Selected"
+    foodkcal.innerHTML="No Food Selected"
+    foodtaste.innerHTML="No Food Selected"
+    recipearea.innerHTML="No Food Selected"
+}
 if(value=="q"){
     foodtime.innerHTML="x1"
     foodkcal.innerHTML="y1"
