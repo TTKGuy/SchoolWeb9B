@@ -52,6 +52,19 @@ function CombArray(array, comboutput){
         comboutput += item;
     });
 }
+function SaveThing(){
+    if(budgetselect == 0){
+        Income1 = document.getElementById("lefttext").value;
+        Income2 = document.getElementById("righttext").value;
+    }
+    else if(budgetselect == 1){
+        UnIncome1 = document.getElementById("lefttext").value;
+        UnIncome2 = document.getElementById("righttext").value;
+    }
+}
+
+
+
 function meals(){
     var select = document.getElementById('Meals');
     var value = select.options[select.selectedIndex].value;
@@ -100,28 +113,9 @@ if(value=="z"){
 }
 
 }
-function CombArray(array){
-    let comboutput = 0
-    array.forEach(item => {
-        comboutput += Number(item)
-    
-    });
-    if(comboutput == 19){
-        return 21
-    }
-    else{
-    return comboutput
-}}
-function SaveThing(){
-    if(budgetselect == 0){
-        Income1 = document.getElementById("lefttext").value;
-        Income2 = document.getElementById("righttext").value;
-    }
-    else if(budgetselect == 1){
-        UnIncome1 = document.getElementById("lefttext").value;
-        UnIncome2 = document.getElementById("righttext").value;
-    }
-}
+
+
+
 function MakeSchedule(){
     if(document.getElementById('STIME').value >= document.getElementById('ETIME').value){
         alert("The start time is later than the end time, dumbass")}
@@ -132,6 +126,9 @@ function MakeSchedule(){
         alert(hourDiff)
     }
 }
+
+
+
 function TestFunc(){
     console.log(document.getElementById('STIME').value)
     console.log(document.getElementById('ETIME').value)
