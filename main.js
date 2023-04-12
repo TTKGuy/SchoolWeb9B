@@ -42,9 +42,11 @@ function checkInput(ob) {
 }
 
 function setNat(){
-    CombArray(Income2.split(' '), inc)
-    CombArray(UnIncome2.split(' '), spend)
-    var NAT = 0
+    SaveThing()
+    inc = CombArray(Income2.split('\n'))
+    spend = CombArray(UnIncome2.split('\n'))
+    NAT = inc - spend
+    document.getElementById("nonbutton").innerHTML = NAT
     console.log(NAT)
 }
 
