@@ -71,31 +71,37 @@ if(value=="w"){
     foodtime.innerHTML="x2"
     foodkcal.innerHTML="y2"
     foodtaste.innerHTML="z2"
+    recipearea.innerHTML="meal 2 recipe"
 }
 if(value=="e"){
     foodtime.innerHTML="x3"
     foodkcal.innerHTML="y3"
     foodtaste.innerHTML="z3"
+    recipearea.innerHTML="meal 3 recipe"
 }
 if(value=="r"){
     foodtime.innerHTML="x4"
     foodkcal.innerHTML="y4"
     foodtaste.innerHTML="z4"
+    recipearea.innerHTML="meal 4 recipe"
 }
 if(value=="t"){
     foodtime.innerHTML="x5"
     foodkcal.innerHTML="y5"
     foodtaste.innerHTML="z5"
+    recipearea.innerHTML="meal 5 recipe"
 }
 if(value=="s"){
     foodtime.innerHTML="x6"
     foodkcal.innerHTML="y6"
     foodtaste.innerHTML="z6"
+    recipearea.innerHTML="meal 6 recipe"
 }
 if(value=="z"){
     foodtime.innerHTML="x7"
     foodkcal.innerHTML="y7"
-    foodtaste.innerHTML="z6"
+    foodtaste.innerHTML="z7"
+    recipearea.innerHTML="meal 7 recipe"
 }
 
 }
