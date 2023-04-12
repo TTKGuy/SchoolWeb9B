@@ -33,14 +33,12 @@ function ChangeType(choice){
     }
 
 }
-
 function checkInput(ob) {
     var invalidChars = /[^0-9]/gi
     if(invalidChars.test(ob.value)) {
               ob.value = ob.value.replace(invalidChars,"");
         }
 }
-
 function setNat(){
     SaveThing()
     inc = CombArray(Income2.split('\n'))
@@ -49,14 +47,11 @@ function setNat(){
     document.getElementById("nonbutton").innerHTML = NAT
     console.log(NAT)
 }
-
 function CombArray(array, comboutput){
     array.forEach(item => {
         comboutput += item;
     });
 }
-
-
 function meals(){
     var select = document.getElementById('Meals');
     var value = select.options[select.selectedIndex].value;
@@ -99,7 +94,6 @@ if(value=="z"){
 }
 
 }
-
 function CombArray(array){
     let comboutput = 0
     array.forEach(item => {
@@ -122,7 +116,6 @@ function SaveThing(){
         UnIncome2 = document.getElementById("righttext").value;
     }
 }
-
 function MakeSchedule(){
     if(document.getElementById('STIME').value >= document.getElementById('ETIME').value){
         alert("The start time is later than the end time, dumbass")}
@@ -133,7 +126,6 @@ function MakeSchedule(){
         alert(hourDiff)
     }
 }
-
 function TestFunc(){
     console.log(document.getElementById('STIME').value)
     console.log(document.getElementById('ETIME').value)
