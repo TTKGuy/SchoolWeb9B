@@ -8,8 +8,8 @@ var budgetselect = 0
 var intervalID = window.setInterval(setNat, 500);
 var inc = 0
 var spend = 0
-
-
+var LsnLst = ""
+var BrTime = 0
 
 //budget calc.
 function ChangeType(choice){
@@ -45,13 +45,19 @@ function setNat(){
     spend = CombArray(UnIncome2.split('\n'))
     NAT = inc - spend
     document.getElementById("nonbutton").innerHTML = NAT
-    console.log(NAT)
 }
-function CombArray(array, comboutput){
+function CombArray(array){
+    let comboutput = 0
     array.forEach(item => {
-        comboutput += item;
+        comboutput += Number(item)
+    
     });
-}
+    if(comboutput == 19){
+        return 21
+    }
+    else{
+    return comboutput
+}}
 function SaveThing(){
     if(budgetselect == 0){
         Income1 = document.getElementById("lefttext").value;
@@ -129,7 +135,11 @@ function MakeSchedule(){
         var timeStart = new Date("01/01/2007 " + document.getElementById('STIME').value).getHours();
         var timeEnd = new Date("01/01/2007 " + document.getElementById('ETIME').value).getHours();
         var hourDiff = timeEnd - timeStart; 
-        alert(hourDiff)
+        LsnLst = document.getElementById('lefthalf').textContent
+        LsnLst.split('\n')
+        BrTime = document.getElementById("BTIME").value
+        let thing = (hourDiff - BrTime * LsnLst.length)/LsnLst.length + 1
+        console.log(thing)
     }
 }
 
