@@ -3,9 +3,10 @@ var imageopt = ["1200px-Trollface.svg.png", "plann-co. logo no bg.png", "pete-gt
 document.addEventListener('keydown', function(event) {
     console.log(event);
     if (event.key == 'ArrowDown') {
-        var num = Math.floor( Math.random() * 5);
+        var num = Math.floor( Math.random() * 6);
         var img = imageopt[num];
         document.getElementById("logo").src = img
+        
     }
  });
 
