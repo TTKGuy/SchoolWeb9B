@@ -1,3 +1,14 @@
+//silly
+var imageopt = ["1200px-Trollface.svg.png", "plann-co. logo no bg.png", "pete-gtk-rabczuk-peter-g-front-small.jpg", "RxsMcJV4qWp-sZer8hgqALhexTIiUaNX_7wYGM2PgMc.webp"]
+document.addEventListener('keydown', function(event) {
+    console.log(event);
+    if (event.key == 'ArrowDown') {
+        var num = Math.floor( Math.random() * 4);
+        var img = imageopt[num];
+        document.getElementById("logo").src = img
+    }
+ });
+
 //1 for the names 2 for the values
 var Income1 = ""
 var Income2= ""
@@ -165,3 +176,4 @@ var choise = document.getElementById("Meals");
 var value = choise.options[choise.selectedIndex].value;
 var text = choise.options[choise.selectedIndex].text;
 c71f670ed3ee9efb5440e6c0dde50b6321eaaed7
+
