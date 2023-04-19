@@ -1,9 +1,9 @@
 //silly
-var imageopt = ["1200px-Trollface.svg.png", "plann-co. logo no bg.png", "pete-gtk-rabczuk-peter-g-front-small.jpg", "RxsMcJV4qWp-sZer8hgqALhexTIiUaNX_7wYGM2PgMc.webp"]
+var imageopt = ["1200px-Trollface.svg.png", "plann-co. logo no bg.png", "pete-gtk-rabczuk-peter-g-front-small.jpg", "RxsMcJV4qWp-sZer8hgqALhexTIiUaNX_7wYGM2PgMc.webp", "86kHtd.png"]
 document.addEventListener('keydown', function(event) {
     console.log(event);
     if (event.key == 'ArrowDown') {
-        var num = Math.floor( Math.random() * 4);
+        var num = Math.floor( Math.random() * 5);
         var img = imageopt[num];
         document.getElementById("logo").src = img
     }
