@@ -135,9 +135,13 @@ function MakeSchedule(){
         var timeStart = new Date("01/01/2007 " + document.getElementById('STIME').value).getHours();
         var timeEnd = new Date("01/01/2007 " + document.getElementById('ETIME').value).getHours();
         var hourDiff = timeEnd - timeStart; 
-        LsnLst = document.getElementById('lefthalf').textContent
+        console.log(hourDiff)
+        LsnLst = document.getElementById('subjects').value
+        console.log(LsnLst)
         LsnLst.split('\n')
+        console.log(LsnLst)
         BrTime = document.getElementById("BTIME").value
+        console.log(BrTime )
         let thing = (hourDiff - BrTime * LsnLst.length)/LsnLst.length + 1
         console.log(thing)
     }
