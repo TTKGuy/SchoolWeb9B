@@ -141,6 +141,24 @@ if(value=="z"){
 
 //school plan.
 function MakeSchedule(){
+    //if(document.getElementById('STIME').value >= document.getElementById('ETIME').value){
+    //    alert("The start time is later than the end time, this website does not support multiple days for projects, it shouldnt be that hard to plan anyways, its really easy if you think about it, just work on the hardest longest one first, i mean really, what are you struggling with???? its not that hard. moronic dummy")}
+    if(0 == 0){
+        var timeStart = new Date("01/01/2007 " + document.getElementById('STIME').value).getHours();
+        var timeEnd = new Date("01/01/2007 " + document.getElementById('ETIME').value).getHours();
+        var hourDiff = timeEnd - timeStart; 
+        console.log("troll")
+        var subjlist = document.getElementById('subjects').value
+        subjlist = Array.from(subjlist)
+        subjlist = subjlist.filter(function(x) {
+            return x !== "a"
+        });
+        console.log(subjlist)
+
+
+
+
+    /*
     if(document.getElementById('STIME').value >= document.getElementById('ETIME').value){
         alert("The start time is later than the end time, dumbass")}
     else{
@@ -156,8 +174,8 @@ function MakeSchedule(){
         console.log(BrTime )
         let thing = (hourDiff - BrTime * LsnLst.length)/LsnLst.length + 1
         console.log(thing)
-    }
-}
+    }*/
+}}
 
 
 //testing
@@ -176,5 +194,3 @@ function TestFunc(){
 var choise = document.getElementById("Meals");
 var value = choise.options[choise.selectedIndex].value;
 var text = choise.options[choise.selectedIndex].text;
-c71f670ed3ee9efb5440e6c0dde50b6321eaaed7
-
