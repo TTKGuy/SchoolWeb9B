@@ -150,8 +150,9 @@ function MakeSchedule(){
         console.log("troll")
         var subjlist = document.getElementById('subjects').value
         subjlist = Array.from(subjlist)
+        subjlist.replace(/[\r\n]/gm, '')
         subjlist = subjlist.filter(function(x) {
-            return x !== "a"
+            return x !== ""
         });
         console.log(subjlist)
 
