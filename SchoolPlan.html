@@ -16,7 +16,7 @@
         <input type="time" id="STIME" name="STIME">
         <input type="time" id="ETIME" name="ETIME">
         <img src="icoflat.png">
-        <input type="text" id="BTIME" name="BTIME" placeholder="Break Time" onkeydown="MakeSchedule()">
+        <button id="BTIME" name="BTIME"  onclick="MakeSchedule()">calculate</button>
       </div>
     <div class="lefthalf" id="lefthalf">
     <p>Subjects</p>
@@ -27,21 +27,8 @@
     
     <div class="righthalf">
       <p>Schedule</p>
-      <textarea placeholder="Schedule will be displayed upon being ready" disabled></textarea>
+      <textarea id='schedule' placeholder="Schedule will be displayed upon being ready" disabled></textarea>
       </div>
-      
-  
-
-
-
-
-
-
-
-
-
-
-
     </div>
 
 

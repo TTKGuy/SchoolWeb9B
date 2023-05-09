@@ -141,41 +141,23 @@ if(value=="z"){
 
 //school plan.
 function MakeSchedule(){
-    //if(document.getElementById('STIME').value >= document.getElementById('ETIME').value){
-    //    alert("The start time is later than the end time, this website does not support multiple days for projects, it shouldnt be that hard to plan anyways, its really easy if you think about it, just work on the hardest longest one first, i mean really, what are you struggling with???? its not that hard. moronic dummy")}
-    if(0 == 0){
-        var timeStart = new Date("01/01/2007 " + document.getElementById('STIME').value).getHours();
-        var timeEnd = new Date("01/01/2007 " + document.getElementById('ETIME').value).getHours();
-        var hourDiff = timeEnd - timeStart; 
-        console.log("troll")
-        var subjlist = document.getElementById('subjects').value
-        subjlist = Array.from(subjlist)
-        subjlist.replace(/[\r\n]/gm, '')
-        subjlist = subjlist.filter(function(x) {
-            return x !== ""
-        });
-        console.log(subjlist)
-
-
-
-
-    /*
     if(document.getElementById('STIME').value >= document.getElementById('ETIME').value){
-        alert("The start time is later than the end time, dumbass")}
+        alert("The start time is later than the end time, this website does not support multiple days for projects, it shouldnt be that hard to plan anyways, its really easy if you think about it, just work on the hardest longest one first, i mean really, what are you struggling with???? its not that hard.")
+    }
     else{
         var timeStart = new Date("01/01/2007 " + document.getElementById('STIME').value).getHours();
         var timeEnd = new Date("01/01/2007 " + document.getElementById('ETIME').value).getHours();
         var hourDiff = timeEnd - timeStart; 
-        console.log(hourDiff)
-        LsnLst = document.getElementById('subjects').value
-        console.log(LsnLst)
-        LsnLst.split('\n')
-        console.log(LsnLst)
-        BrTime = document.getElementById("BTIME").value
-        console.log(BrTime )
-        let thing = (hourDiff - BrTime * LsnLst.length)/LsnLst.length + 1
-        console.log(thing)
-    }*/
+        timeStart = new Date("01/01/2007 " + document.getElementById('STIME').value).getMinutes();
+        timeEnd = new Date("01/01/2007 " + document.getElementById('ETIME').value).getMinutes();
+        var minuteDiff = timeEnd - timeStart
+        console.log("troll")
+        var subjlist = document.getElementById('subjects').value
+        subjlist = subjlist.split('\n')
+        subjlist.sort(() => Math.random() - 0.5);
+        console.log(subjlist)
+        console.log(hourDiff + " " + minuteDiff)
+        document.getElementById('schedule').value = "You have " + hourDiff + " Hours and " + minuteDiff + " Minutes to finish your work. \n" + 'The order in which you should complete these tasks is: \n'  + subjlist.join('\n')
 }}
 
 
