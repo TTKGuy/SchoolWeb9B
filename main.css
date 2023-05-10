@@ -285,7 +285,6 @@ a {
   }
   .righthalf {
     border-left: 1vw solid #C0EEF2;
-    overflow: hidden;
     height: 83vh;
     width: 50%;
     position: fixed;
@@ -293,12 +292,10 @@ a {
     bottom: 0;
     right: 0;
     background-color: #11111100;
-    overflow-x: hidden;
   }
   .righthalf textarea{
     color: #181823;
     border: none;
-    overflow: hidden;
     outline: none;
     text-align: left;
     padding-left: 1vw;

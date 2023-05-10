@@ -94,16 +94,16 @@ if(value=="x"){
     recipearea.innerHTML="No Food Selected"
 }
 if(value=="q"){
-    foodtime.innerHTML="x1"
-    foodkcal.innerHTML="y1"
-    foodtaste.innerHTML="z1"
-    recipearea.innerHTML="meal 1 recipe"
+    foodtime.innerHTML="10 Minutes"
+    foodkcal.innerHTML="254 calories"
+    foodtaste.innerHTML="tastes like eggs"
+    recipearea.innerHTML="2 eggs, 6 teaspond of cream milk, a knob of butter\n\n Lightly whisk 2 large eggs, 6 tbsp single cream or full cream milk and a pinch of salt together until the mixture has just one consistency. \n Heat a small non-stick frying pan for a minute or so, then add a knob of butter and let it melt. Don’t allow the butter to brown or it will discolour the eggs.\n Pour in the egg mixture and let it sit, without stirring, for 20 seconds. Stir with a wooden spoon, lifting and folding it over from the bottom of the pan. \nLet it sit for another 10 seconds then stir and fold again.\nRepeat until the eggs are softly set and slightly runny in places. Remove from the heat and leave for a moment to finish cooking.\nGive a final stir and serve the velvety scramble without delay."
 }
 if(value=="w"){
-    foodtime.innerHTML="x2"
-    foodkcal.innerHTML="y2"
-    foodtaste.innerHTML="z2"
-    recipearea.innerHTML="meal 2 recipe"
+    foodtime.innerHTML="40 minutes"
+    foodkcal.innerHTML="317 calories"
+    foodtaste.innerHTML="potato"
+    recipearea.innerHTML="STEP 1Peel the potatoes and cut into 1cm-thick batons. Put into a bowl of cold water and leave to soak for at least 2 hrs to remove the starch from the potatoes – this will help them crisp while frying.STEP 2Drain the potatoes well and pat dry with kitchen paper. Fill a deep pan no more than a third full with oil and heat to 140C, or until a cube of bread dropped in browns in 60 seconds. Fry the French fries in batches for 6 mins per batch until golden straw-coloured, cooked through and lightly crisp. Drain well on kitchen paper.STEP 3Turn the heat up until the oil reaches 180C, or a cube of bread browns in 30 seconds. Fry the French fries again for 2-3 mins per batch until lightly golden and really crisp. Drain on kitchen paper and immediately season with sea salt."
 }
 if(value=="e"){
     foodtime.innerHTML="x3"
